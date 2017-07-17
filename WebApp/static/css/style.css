@@ -1,0 +1,280 @@
+* {box-sizing: border-box;}
+
+body {
+	margin: 0px;
+}
+
+.container{
+	width: 1024px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.header{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	background-color: white;
+}
+
+.header h1 {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.header .cizgi {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 20 0 0 0;
+	border: 1px solid gray;
+	opacity: 0.5;
+	height: 25px;
+	width: 0px;
+	background-color: gray;
+}
+
+.text {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 15px;
+}
+
+.text p {
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	color: gray;
+	opacity: 0.5;
+	width: 150px;
+}
+
+.search{
+	float: right;
+	margin-top: 20px;
+	font-size: 0px;
+}
+
+.search input {
+    width: 250px;
+    height: 30px;
+}
+
+.search button{
+	color: white;
+	background-color: purple;
+	border: 1px solid purple;
+	border-radius: 0px 5px 5px 0px;
+	height: 32px;
+}
+
+.menu {
+	width: 100%;
+	padding: 0px;
+	float: left;
+    list-style-type: none;
+    background-color: LightGray;
+    border: 1px solid gray;
+}
+.menu ul{
+	padding: 0px;
+	margin: 0px;
+}
+.menu li{
+	display: block;
+}
+
+.menu li a {
+	float: left;
+	padding: 15px;
+    font-family: "Times New Roman";
+    font-size: 16px;
+    text-decoration-line: none;
+    color: gray;
+    background-color: LightGray;
+    text-align: center;
+}
+
+.menu li a.active {
+    color: white; 
+    background-color: purple; 
+	border-radius: 0px;
+}
+
+.content1 {
+	display: inline-block;
+	width: 100%;
+	background-color: white;
+}
+
+.content1 .item1 {
+	float: left;
+	border: 1px solid gray;
+	width: 50%;
+	padding: 3px;
+	margin: 20px 0px 30px 0px;
+}
+
+.content1 .item1 img {
+	width: 100%;
+	height: 380px;
+	padding: 3px;
+}
+
+.content1 .item2 {
+	float: right;
+	width: 50%;
+	padding: 3px;
+	margin: 10px 0px 10px 0px;
+}
+
+.content1 .item2 img {
+	width: 190px;
+	height: 190px;
+	padding: 10px;
+	margin: 0px 20px 15px 30px;
+}
+
+.slider{
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	background-color: LightGray;
+	width: 100%
+}
+
+.slider .slider-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 7px;
+}
+
+.slider .slider-button a {
+	text-decoration : none;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: white;
+	color: purple;
+}
+
+.slider .bolum {
+	float: left;
+	width: 30%;
+	height: 300px;
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 3px;
+	text-align: center;
+	margin: 50px 20px 50px 10px;
+	padding: 10px;
+}
+
+.slider .bolum img {
+	height: 150px;
+}
+
+.content2 {
+	display: inline-block;
+	vertical-align: middle;
+	margin: auto;
+	background-color: white;
+}
+
+.content2 .kisi {
+	width: 50%;
+	float: left;
+	margin: 17px 0px 0px 0px;
+	padding: 10px;
+	background-color: white;
+}
+
+.content2 .kisi img {
+	float: left;
+	width: 50%;
+	height: 300px;
+}
+
+.content2 .kisi .konu {
+	float: right;
+	color: gray;
+	padding: 5px;
+	width: 50%;
+}
+
+.content2 .kisi .konu a {
+	background-color: purple;
+	color: white;
+	text-decoration: none;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+.footer {
+	display: inline-block;
+	vertical-align: top;
+	background-color: white;
+	color: gray;
+	width: 100%;
+	border-top-width: 10px;
+	border-top-color: LightGray;
+	border-top-style: solid;
+}
+
+.footer .blog { 
+	
+	display: inline-block;
+	vertical-align: top;
+	width: 24%;
+	padding: 15px;
+	margin: 0px;
+}
+
+.footer .blog a {
+	color: purple;
+	text-decoration: none;
+}
+
+.footer .blog input {
+	width: 100%;
+	height: 40px;
+	text-align: left;
+	margin-bottom: 3px;
+	border: 1px solid Lightgray;
+	border-radius: 3px;
+	background-color: Lightgray;
+	color: gray;
+}
+.footer .blog input[name=mesaj] {
+	height: 150px;
+}
+
+.footer .blog button {
+	background-color: purple;
+	color: white;
+	border: 1px solid purple;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+.footer .blog .link {
+	width: 100px;
+	height: 50px;
+}
+
+.footer .blog2 {
+	float: left;
+	width: 100%;
+	padding: 10px;
+	background-color: gray;
+	color: white;
+	border-top-width: 3px;
+	border-top-color: black;
+	border-top-style: solid;
+}
+
+.footer .blog2 .left {
+	float: left;
+}
+
+.footer .blog2 .right {
+	float: right;
+}
