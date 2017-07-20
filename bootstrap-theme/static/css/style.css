@@ -1,3 +1,10 @@
+{box-sizing: border-box;}
+
+.clearfix {
+	overflow:auto;
+	zoom:1;
+}
+
 .header {
 	width: 1024px;
 	background-color: gray;
@@ -51,9 +58,6 @@
 }
 
 .header .container .col-md-6 .rectangle {
-	border: 1px solid gray;
-	width: 468px;
-	height: 60px;
 	margin: 20px;
 	padding: 0px;
 }
@@ -61,6 +65,11 @@
 .header .container .col-md-6 .regtangle figure {
 	border: 1px solid gray;
 	padding: 0px;
+	width: 468px;
+}
+
+.header .container .col-md-6 .regtangle figure img{
+	max-width: 100%;
 }
 
 .header .menu {
@@ -130,6 +139,10 @@
 	margin: 0px 0px 10px 0px;
 }
 
+.container .col-md-8 .media figure img {
+	max-width: 100%;
+}
+
 .container .col-md-8 .ftext {
 	width: 100%;
 	display: inline-block;
@@ -155,8 +168,11 @@
 	border: 1px solid gray;
 	padding: 3px;
 	width: 270px;
-	height: 100px;
 	margin: 0px 0px 10px 0px;
+}
+
+.container .col-md-6 .media2 figure img {
+	max-width: 100%;
 }
 
 .container .col-md-4 h4 {
@@ -177,8 +193,11 @@
 .container .col-md-4 .lists .list-group li figure {
 	border: 1px solid gray;
 	width: 80px;
-	height: 80px;
 	padding: 3px;
+}
+
+.container .col-md-4 .lists .list-group figure img {
+	max-width: 100%;
 }
 
 .container .col-md-4 .text {
@@ -210,8 +229,11 @@
 	border: 1px solid gray;
 	padding: 2px;
 	width: 60px;
-	height: 60px;
 	float: left;
+}
+
+.container .col-md-4 .last-text .image figure img {
+	max-width: 100%;
 }
 
 .container .col-md-4 .last-text .image h4 {
