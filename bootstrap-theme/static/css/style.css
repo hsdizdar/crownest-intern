@@ -1,0 +1,293 @@
+.header {
+	width: 1024px;
+	background-color: gray;
+	margin: auto;
+}
+
+.header .square {
+	display: inline-block;
+	margin: 10px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid LightGray;
+}
+
+.header .search {
+	float: right;
+	padding: 15px;
+}
+
+.header .search input {
+	background-color: gray;
+	border: 1px solid LightGray;
+	width: 200px;
+}
+
+.header .search input[type=text]::-webkit-input-placeholder { 
+	color: LightGray;
+}
+
+.header .search button {
+	border: 1px solid LightGray;
+	background-color: gray;
+	color: LightGray;
+}
+
+.header .container{
+	margin: 0 auto;
+	width: 1024px;
+	background-color: white;
+}
+
+.header .container .col-md-6 h1 {
+	padding: 0px;
+	margin-bottom: 0px;
+	color: gray;
+}
+
+.header .container .col-md-6 span {
+	opacity: 0.3px;
+	color: gray;
+}
+
+.header .container .col-md-6 .rectangle {
+	border: 1px solid gray;
+	width: 468px;
+	height: 60px;
+	margin: 20px;
+	padding: 0px;
+}
+
+.header .container .col-md-6 .regtangle figure {
+	border: 1px solid gray;
+	padding: 0px;
+}
+
+.header .menu {
+	width: 100%;
+	padding: 0px;
+	float: left;
+    list-style-type: none;
+    background-color: LightGray;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-top-color: gray;
+    border-top-width: 1px;
+}
+
+.header .menu {
+	padding: 0px;
+	margin: 0px;
+}
+
+.header .menu li{
+	display: block;
+}
+
+.header .menu li a {
+	float: left;
+	padding: 15px;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration-line: none;
+    color: black ;
+    text-align: center;
+}
+
+.header .menu li a.active {
+	margin: 0px 10px 0px 10px;
+	background-color: gray;
+    color: black; 
+	border-radius: 0px;
+}
+
+.container {
+	margin: 0 auto;
+	background-color: white;
+	width: 1024px;
+}
+
+.container .col-md-8 h4 {
+	border-bottom-width: 1px ;
+	border-bottom-color: gray;
+	border-bottom-style: dashed; 
+	text-align: left;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+.container .col-md-8 .media {
+	margin: 20px;
+	padding: 0px;
+}
+
+.container .col-md-8 .media figure {
+	border: 1px solid gray;
+	padding: 4px;
+	width: 580px;
+	margin: 0px 0px 10px 0px;
+}
+
+.container .col-md-8 .ftext {
+	width: 100%;
+	display: inline-block;
+}
+
+.container .col-md-8 .link {
+	float: right;
+	font-family: Monaco;
+	font-size: 14px;
+	color: orange;
+}
+
+.container .col-md-6 {
+	margin: 15px 0px 0px 0px;
+}
+
+.container .col-md-6 .media2 {
+	margin: 15px;
+	padding: 0px;
+}
+
+.container .col-md-6 .media2 figure {
+	border: 1px solid gray;
+	padding: 3px;
+	width: 270px;
+	height: 100px;
+	margin: 0px 0px 10px 0px;
+}
+
+.container .col-md-4 h4 {
+	border-bottom-width: 1px ;
+	border-bottom-color: gray;
+	border-bottom-style: dashed; 
+	text-align: left;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+.container .col-md-4 .lists .list-group li {
+	display: inline-block;
+	padding: 0px;
+	margin: 10px;
+}
+
+.container .col-md-4 .lists .list-group li figure {
+	border: 1px solid gray;
+	width: 80px;
+	height: 80px;
+	padding: 3px;
+}
+
+.container .col-md-4 .text {
+	margin:0px 0px 35px 0px;
+}
+.container .col-md-4 .text .unorderedlist {
+	margin: 0px 0px 10px 10px;
+}
+
+.container .col-md-4 .text .unorderedlist li {
+	list-style-type: square;
+}
+
+.container .col-md-4 .text a {
+	float: right;
+	font-family: Monaco;
+	font-size: 14px;
+	color: orange;
+}
+
+.container .col-md-4 .last-text a {
+	text-decoration: none;
+	color: orange;
+	float: right;
+	font-family: Monoca;
+}
+
+.container .col-md-4 .last-text .image figure {
+	border: 1px solid gray;
+	padding: 2px;
+	width: 60px;
+	height: 60px;
+	float: left;
+}
+
+.container .col-md-4 .last-text .image h4 {
+	float: right;
+	width: calc(100% - 75px);
+	border: 0px;
+}
+
+.container .col-md-4 .mtext {
+	border-top-width: 1px;
+	border-top-color: gray;
+	border-top-style: dashed;
+	display: inline-block;
+	margin: 10px 0px 0px 0px;
+}
+
+.container .col-md-4 .mtext p {
+	display: inline-block;
+}
+
+.container .col-md-4 .last-text p {
+	margin: 20px 0px 0px 0px;
+}
+
+.footer {
+	width: 1024px;
+	margin: 0 auto;
+	background-color: gray;
+	color: LightGray;
+	padding: 10px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: white;
+}
+
+.footer .col-md-4 h2 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: LightGray;
+	padding: 3px;
+}
+
+.footer .col-md-4 input {
+	border: 1px solid black;
+	background-color: gray;
+	margin: 0px 0px 10px 10px;
+	width: 200px;
+}
+
+.footer .col-md-4 button {
+	border: 1px solid black;
+	color: black;
+	background-color: gray;
+}
+
+.footer .col-md-4 a {
+	font-size: bold;
+	color: white;
+}
+
+.footer .col-md-4 li {
+	margin: 0px 0px 10px 0px;
+}
+
+.flast{
+	background-color: black;
+	padding: 15px;
+	width: 1024px;
+	margin: 0 auto;
+	color: gray;
+}
+
+.flast .left {
+	float: left;
+}
+
+.flast .right {
+	float: right;
+}
