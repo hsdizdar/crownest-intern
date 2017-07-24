@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+
+body {
+	font-family: 'Droid Serif', serif;
+}
+
+header {
+	margin: 0 auto;
+	width: 1024px;
+	padding-bottom: 30px;
+	border-bottom-width: 1px;
+	border-bottom-color: LightGray;
+	border-bottom-style: solid;
+}
+
+header .col-md-4 h1 {
+	margin-bottom: 0px;
+	font-family: sans-serif;
+}
+
+header .col-md-4 h1 span {
+	font-size: 50px;
+}
+
+header .col-md-4 p {
+	opacity: 0.3px;
+	font-family: sans-serif;
+}
+
+header .col-md-8 .menu {
+	margin: 20px 0px 0px 20px;
+	border-radius : 7px;
+	float: right;
+	border: 1px solid #FF2929;
+	padding: 0px;
+	background-color: #FF2929;
+}
+
+header .col-md-8 .menu li {
+	display: inline-block;
+	position: relative;
+}
+
+header .col-md-8 .menu li a {
+	float: left;
+    font-family: Monoca;
+    color: white;
+    text-decoration-line: none;
+    text-align: center;
+    padding: 15px; 
+}
+
+header .col-md-8 .menu li a:hover {
+    color: #E77070; 
+}
+
+header .col-md-8 .menu li ul {
+    float:left;
+    position:absolute;
+    border:1px solid #FF2929;
+    border-radius: 7px;
+    background-color: #FF2929;
+    color: white;
+    z-index:1;
+    display:none;
+    margin-top: 40px;
+ }
+
+header .col-md-8 .menu li ul a{
+    width:100px;
+    height:30px;
+    line-height:30px;
+    float:left;
+    padding:0 0 0 17px;
+}
+
+header .col-md-8  li:hover > ul {
+    display: block;
+}
+
+.slider {
+	margin: 0 auto;
+	width: 1024px;
+	height: 200px;
+	padding: 35px;
+	position: relative;
+}
+
+.slider .slider-item figure {
+	margin-bottom: 10px;
+}
+
+.slider .slider-item figure img {
+	width: 80%;
+	height: 350px;
+	margin: auto;
+}
+
+.slider p.italic {
+	font-size: 24px;
+	padding: 10px;
+	text-align: center;
+	font-style: italic;
+	font-family: 'Roboto', sans-serif;
+}
+
+.slider .slick-list {
+	margin: auto;
+}
+
+.slider .slick-dots li button {
+	border: 1px solid Lightgray;
+	border-radius: 50%;
+	background-color: Lightgray;
+	width: 15px;
+	height: 15px;
+	float: left;
+	padding: 0px;
+	margin:0px 10px 0px 0px;
+}
+
+.slider .slick-dots li.slick-active button {
+	border:2px solid black;
+
+}
+
+
+.container {
+	margin: 0 auto;
+	width: 1024px;
+	padding: 20px;
+	margin-top: 350px;
+}
+
+.container-item {
+	position: relative;
+	padding: 15px;
+}
+
+.container .container-item .line {
+	border: 1px solid LightGray;
+	margin: 0px;
+}
+
+.container .container-item span.title {
+	position: absolute;
+	bottom: 0;
+	zoom: 1;
+	background-color: #FF2929;
+	color: white;
+	border-radius: 5px;
+	margin: 0px 0px 0px 390px; 
+	display: block;
+	text-align: center;
+	width: 150px;
+	padding: 6px;
+}
+
+.container .content {
+	margin: 20px 0px 20px 0px;
+	padding: 10px;
+}
+
+.container .content .row .col-md-4 button {
+	background-color: white;
+	border-width: 0px;
+	height: 30px;
+	width: 30px;
+	float: left;
+	margin-top: 15px;
+}
+
+.container .content .row .col-md-4 h3 {
+	float: right;
+	width: calc(100% - 40px);
+}
+
+.container .content .row .col-md-4 p {
+	color: gray;
+}
+
+.container .content .row .col-md-4 a {
+	color: #FF2929;
+}
+
+.container .main{
+	margin-bottom: 20px;
+	color: gray;
+}
+
+.container .main .person figure img{
+	width: 180px;
+	height: 180px;
+}
+
+.container .main .person p span {
+	color: gray;
+	font-weight: bold;
+}
+
+
+.container .main .person a {
+	color: #FF2929;
+	float: left;
+}
+
+.container .image {
+	padding-top: 20px;
+}
+
+footer {
+	margin: 0 auto;
+	width: 1024px;
+	background-color: LightGray;
+	padding: 15px;
+}
+
+footer .footer-item figure {
+	float: left;
+	border: 1px solid gray;
+	margin: 10px 0px 10px 0px;
+}
+
+footer .footer-item figure img {
+	padding: 3px;
+	width: 80px;
+	height: 80px;
+}
+
+footer .footer-item .footer-txt {
+	float: right;
+	width: calc(100% - 100px);
+	color: gray;
+}
+
+footer .footer-item .footer-txt h6 {
+	color: #FF2929;
+}
+
+footer .col-md-3 .footer-list {
+	color: gray;
+}
+
+footer .col-md-3 .footer-list li a {
+	color:  #FF2929;
+}
+
+
+footer .col-md-3 input {
+	width: 100%;
+	height: 40px;
+	text-align: left;
+	margin-bottom: 3px;
+	border: 1px solid white;
+	border-radius: 5px;
+	background-color: white;
+	color: gray;
+	padding: 5px;
+}
+
+footer .col-md-3 input[name=message] {
+	height: 150px;
+}
+
+footer .col-md-3 button {
+	background-color: #FF2929;
+	color: white;
+	border: 1px solid  #FF2929;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+footer .row .footer-last {
+	border-top-color: gray;
+	border-top-style: solid;
+	border-top-width: 1px;
+	width: 100%;
+	margin: 15px 0px 15px 0px;
+	padding: 5px;
+}
+
+footer .row .footer-last .col-md-6  .left {
+	float: left;
+	color: gray;
+	padding: 3px;
+}
+
+footer .row .footer-last .col-md-6 .right {
+	float: right;
+	color: gray;
+	padding: 3px;
+}
