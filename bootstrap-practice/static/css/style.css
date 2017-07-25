@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Bellefair&subset=hebrew,latin-ext');
 
 body {
 	font-family: 'Droid Serif', serif;
@@ -16,7 +16,6 @@ header {
 
 header .col-md-4 h1 {
 	margin-bottom: 0px;
-	font-family: sans-serif;
 }
 
 header .col-md-4 h1 span {
@@ -25,7 +24,6 @@ header .col-md-4 h1 span {
 
 header .col-md-4 p {
 	opacity: 0.3px;
-	font-family: sans-serif;
 }
 
 header .col-md-8 .menu {
@@ -44,7 +42,6 @@ header .col-md-8 .menu li {
 
 header .col-md-8 .menu li a {
 	float: left;
-    font-family: Monoca;
     color: white;
     text-decoration-line: none;
     text-align: center;
@@ -87,6 +84,12 @@ header .col-md-8  li:hover > ul {
 	position: relative;
 }
 
+.slick-slide {
+	border-width: 0px;
+	outline: none; 
+	background: transparent; 
+}
+
 .slider .slider-item figure {
 	margin-bottom: 10px;
 }
@@ -102,11 +105,17 @@ header .col-md-8  li:hover > ul {
 	padding: 10px;
 	text-align: center;
 	font-style: italic;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Bellefair', serif;
 }
 
-.slider .slick-list {
-	margin: auto;
+.slider .slick-dots {
+	text-align: center;
+	border-width: 0px;
+	background-size: cover;
+}
+
+.slider .slick-dots li {
+	display: inline-block;
 }
 
 .slider .slick-dots li button {
@@ -115,9 +124,10 @@ header .col-md-8  li:hover > ul {
 	background-color: Lightgray;
 	width: 15px;
 	height: 15px;
-	float: left;
 	padding: 0px;
 	margin:0px 10px 0px 0px;
+	font-size: 0px;
+	outline: none; 
 }
 
 .slider .slick-dots li.slick-active button {
@@ -125,6 +135,13 @@ header .col-md-8  li:hover > ul {
 
 }
 
+.slider .slick-cloned {
+	border-width: 0px;
+}
+
+.slider .slick-list {
+	border-width: 0px;
+}
 
 .container {
 	margin: 0 auto;
@@ -162,13 +179,14 @@ header .col-md-8  li:hover > ul {
 	padding: 10px;
 }
 
-.container .content .row .col-md-4 button {
+.container .content .row .col-md-4 span{
 	background-color: white;
 	border-width: 0px;
 	height: 30px;
 	width: 30px;
 	float: left;
 	margin-top: 15px;
+	font-size: 30px;
 }
 
 .container .content .row .col-md-4 h3 {
@@ -259,8 +277,11 @@ footer .col-md-3 input {
 	padding: 5px;
 }
 
-footer .col-md-3 input[name=message] {
-	height: 150px;
+footer .col-md-3 textarea {
+	height: 130px;
+	width: 100%;
+	border:1px solid white;
+	border-radius: 5px;
 }
 
 footer .col-md-3 button {
