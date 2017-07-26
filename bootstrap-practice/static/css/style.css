@@ -7,7 +7,6 @@ body {
 
 header {
 	margin: 0 auto;
-	width: 1024px;
 	padding-bottom: 30px;
 	border-bottom-width: 1px;
 	border-bottom-color: LightGray;
@@ -15,21 +14,23 @@ header {
 }
 
 header .col-md-4 h1 {
-	margin-bottom: 0px;
+	margin: 0px 0px 0px 15px;
 }
 
 header .col-md-4 h1 span {
 	font-size: 50px;
+	 
 }
 
 header .col-md-4 p {
 	opacity: 0.3px;
+	margin: 0px 0px 0px 20px;
 }
 
 header .col-md-8 .menu {
 	margin: 20px 0px 0px 20px;
 	border-radius : 7px;
-	float: right;
+	display: inline-block;
 	border: 1px solid #FF2929;
 	padding: 0px;
 	background-color: #FF2929;
@@ -77,17 +78,8 @@ header .col-md-8  li:hover > ul {
 }
 
 .slider {
-	margin: 0 auto;
-	width: 1024px;
 	height: 200px;
 	padding: 35px;
-	position: relative;
-}
-
-.slick-slide {
-	border-width: 0px;
-	outline: none; 
-	background: transparent; 
 }
 
 .slider .slider-item figure {
@@ -106,6 +98,12 @@ header .col-md-8  li:hover > ul {
 	text-align: center;
 	font-style: italic;
 	font-family: 'Bellefair', serif;
+}
+
+.slick-slide {
+	outline: none; 
+	background: transparent; 
+
 }
 
 .slider .slick-dots {
@@ -132,104 +130,96 @@ header .col-md-8  li:hover > ul {
 
 .slider .slick-dots li.slick-active button {
 	border:2px solid black;
-
 }
 
-.slider .slick-cloned {
-	border-width: 0px;
-}
-
-.slider .slick-list {
-	border-width: 0px;
-}
-
-.container {
+.wrapper {
 	margin: 0 auto;
-	width: 1024px;
-	padding: 20px;
-	margin-top: 350px;
+	padding: 250px 20px 20px 20px;
+	display: block;
 }
 
-.container-item {
+.wrapper-item {
 	position: relative;
-	padding: 15px;
+	padding: 17px;
 }
 
-.container .container-item .line {
+.wrapper .wrapper-item .line {
 	border: 1px solid LightGray;
 	margin: 0px;
 }
 
-.container .container-item span.title {
+.wrapper .wrapper-item span.title {
 	position: absolute;
-	bottom: 0;
-	zoom: 1;
+	bottom: 0px;
+	left:  40%;
+	z-index: 1;
 	background-color: #FF2929;
 	color: white;
-	border-radius: 5px;
-	margin: 0px 0px 0px 390px; 
-	display: block;
+	border-radius: 5px; 
 	text-align: center;
 	width: 150px;
 	padding: 6px;
 }
 
-.container .content {
-	margin: 20px 0px 20px 0px;
+.wrapper .content {
+	margin: 0px;
 	padding: 10px;
 }
 
-.container .content .row .col-md-4 span{
-	background-color: white;
-	border-width: 0px;
-	height: 30px;
-	width: 30px;
+.wrapper .content .row .col-md-4 span{
 	float: left;
 	margin-top: 15px;
-	font-size: 30px;
+	font-size: 25px;
 }
 
-.container .content .row .col-md-4 h3 {
+.wrapper .content .row .col-md-4 h3 {
 	float: right;
-	width: calc(100% - 40px);
+	width: calc(100% - 30px);
 }
 
-.container .content .row .col-md-4 p {
+.wrapper .content .row .col-md-4 p {
 	color: gray;
 }
 
-.container .content .row .col-md-4 a {
+.wrapper .content .row .col-md-4 a {
 	color: #FF2929;
 }
 
-.container .main{
-	margin-bottom: 20px;
+.wrapper .main{
+	margin: 0px 0px 20px 0px;
 	color: gray;
 }
 
-.container .main .person figure img{
+.wrapper .main .person figure img{
 	width: 180px;
 	height: 180px;
 }
 
-.container .main .person p span {
+.wrapper .main .person p span {
 	color: gray;
 	font-weight: bold;
 }
 
-
-.container .main .person a {
+.wrapper .main .person a {
 	color: #FF2929;
 	float: left;
 }
 
-.container .image {
-	padding-top: 20px;
+.wrapper .image {
+	margin: 20px 0px 0px 0px;
+}
+
+.wrapper .image .row .col-md-4 figure {
+	padding: 5px;
+}
+
+.wrapper .image .row .col-md-4 figure img {
+	width: 250px;
+	height: 150px;
 }
 
 footer {
 	margin: 0 auto;
-	width: 1024px;
 	background-color: LightGray;
 	padding: 15px;
 }
@@ -237,7 +227,7 @@ footer {
 footer .footer-item figure {
 	float: left;
 	border: 1px solid gray;
-	margin: 10px 0px 10px 0px;
+	margin:0px 0px 20px 0px;
 }
 
 footer .footer-item figure img {
@@ -250,6 +240,7 @@ footer .footer-item .footer-txt {
 	float: right;
 	width: calc(100% - 100px);
 	color: gray;
+	margin: 0px 0px 20px 0px;
 }
 
 footer .footer-item .footer-txt h6 {
@@ -275,6 +266,7 @@ footer .col-md-3 input {
 	background-color: white;
 	color: gray;
 	padding: 5px;
+	outline: none;
 }
 
 footer .col-md-3 textarea {
@@ -282,6 +274,7 @@ footer .col-md-3 textarea {
 	width: 100%;
 	border:1px solid white;
 	border-radius: 5px;
+	outline: none;
 }
 
 footer .col-md-3 button {
@@ -290,6 +283,7 @@ footer .col-md-3 button {
 	border: 1px solid  #FF2929;
 	border-radius: 3px;
 	padding: 5px;
+	outline: none;
 }
 
 footer .row .footer-last {

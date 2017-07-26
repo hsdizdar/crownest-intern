@@ -5,6 +5,7 @@ $(document).ready(function() {
 		arrows: false, 
 		infinite: true,
 		slidesToShow: 1,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		adaptiveHeight: true
 	});
 });
