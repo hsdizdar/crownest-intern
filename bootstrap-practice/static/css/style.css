@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Bellefair&subset=hebrew,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
 
 body {
 	font-family: 'Droid Serif', serif;
@@ -27,77 +27,155 @@ header .col-md-4 p {
 	margin: 0px 0px 0px 20px;
 }
 
-header .col-md-8 .menu {
-	margin: 20px 0px 0px 20px;
-	border-radius : 7px;
-	display: inline-block;
-	border: 1px solid #FF2929;
-	padding: 0px;
-	background-color: #FF2929;
+.menu {
+	width: 100%;
+	margin: 32px 0 0 0;
+	font-size:0;
 }
 
-header .col-md-8 .menu li {
-	display: inline-block;
+.menu > li {
 	position: relative;
+	display: inline-block;
+	width: calc(100% / 5);
 }
 
-header .col-md-8 .menu li a {
-	float: left;
-    color: white;
-    text-decoration-line: none;
-    text-align: center;
-    padding: 15px; 
+.menu li a {
+	position: relative;
+	display: block;
+	padding: 10px ;
+	background-color: #ff2929;
+	font-size: 13px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
 }
 
-header .col-md-8 .menu li a:hover {
-    color: #E77070; 
+.menu li a:hover {
+	color: #F97C7C;
 }
 
-header .col-md-8 .menu li ul {
-    float:left;
-    position:absolute;
-    border:1px solid #FF2929;
-    border-radius: 7px;
-    background-color: #FF2929;
-    color: white;
-    z-index:1;
-    display:none;
-    margin-top: 40px;
- }
+.menu >li:first-child >a {border-radius: 6px 0 0 6px;}
 
-header .col-md-8 .menu li ul a{
-    width:100px;
-    height:30px;
-    line-height:30px;
-    float:left;
-    padding:0 0 0 17px;
+.menu >li:last-child >a {border-radius: 0 6px 6px 0;}
+
+.menu li.dropdown >a:after {
+	content:"";
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	border: 6px solid transparent;
+	border-top: 6px solid #fff;
 }
 
-header .col-md-8  li:hover > ul {
-    display: block;
+.menu li .sub-nav {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: blue;
+	width: 100%;
+}
+
+.menu li .sub-nav li a {
+	background-color: #f75454;
+}
+
+.menu li.dropdown:hover .sub-nav {
+	display: block;
+
+}
+
+.mobile-menu {
+	text-decoration: none;
+	float: right;
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 6px;
+	background-color: #ff2929;
+	color: white;
+	font-size: 25px;
+	text-align: center; 
+}
+
+.mobile-menu.active {
+	position: fixed;
+	z-index: 11;
+	top: 5px;
+	right: 5px;
+	margin:0px;
+	background-color: #f75454;
+	color: #fff;
+	text-decoration: none;
+}
+
+.mobile-menu.active i:before {
+	content:"\e014";
+}
+
+.glyphicon-align-justify {
+	color: white;
+}
+
+@media (max-width: 768px) {
+	.menu {
+		display: none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 10;
+		width: 100%;
+		height: 100%;
+		margin:0;
+		padding: 25px;
+		background-color: #ff2929;
+		overflow-y: auto;
+	}
+
+	.menu.show {
+		display: block;
+	}
+
+	.menu li {
+		margin-top: 3px;
+		width: 100%;
+		border-bottom: 1px solid #ec1c1c;
+	}
+	
+	.menu >li:first-child >a, .menu >li:last-child >a {
+		border-radius: 0;
+	}
+	
+	.menu li .sub-nav {
+		display: block;
+		position: relative;
+		top: 0;
+		display: none;
+	}
+
+	.menu li .sab-nav:hover {
+		display: block;
+	}
+
+}
+
+.text p.italic {
+	color: gray;
+	text-align: center;
+	font-size: 25px;
+	font-style: italic;
+	font-family: 'EB Garamond', serif;
+	margin-top: 10px;
 }
 
 .slider {
-	height: 200px;
 	padding: 35px;
 }
 
-.slider .slider-item figure {
-	margin-bottom: 10px;
-}
-
 .slider .slider-item figure img {
-	width: 80%;
-	height: 350px;
-	margin: auto;
-}
-
-.slider p.italic {
-	font-size: 24px;
-	padding: 10px;
-	text-align: center;
-	font-style: italic;
-	font-family: 'Bellefair', serif;
+	width: 100%;
+	padding: 5px;
 }
 
 .slick-slide {
@@ -134,7 +212,7 @@ header .col-md-8  li:hover > ul {
 
 .wrapper {
 	margin: 0 auto;
-	padding: 250px 20px 20px 20px;
+	padding: 20px 20px 20px 20px;
 	display: block;
 }
 
@@ -151,7 +229,8 @@ header .col-md-8  li:hover > ul {
 .wrapper .wrapper-item span.title {
 	position: absolute;
 	bottom: 0px;
-	left:  40%;
+	left: 50%;
+	transform: translateX(-50%);
 	z-index: 1;
 	background-color: #FF2929;
 	color: white;

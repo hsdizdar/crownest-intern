@@ -8,4 +8,10 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		adaptiveHeight: true
 	});
+
+	$(".mobile-menu").click(function(e){
+		e.preventDefault();
+		$(".menu").toggleClass("show");
+		$(this).toggleClass("active");
+	});
 });
