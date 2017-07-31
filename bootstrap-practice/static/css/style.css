@@ -13,13 +13,12 @@ header {
 	border-bottom-style: solid;
 }
 
-header .col-md-4 h1 {
-	margin: 0px 0px 0px 15px;
+header .col-md-4 h2 {
+	margin: 0px 0px 0px 10px;
 }
 
-header .col-md-4 h1 span {
-	font-size: 50px;
-	 
+header .col-md-4 h2 span {
+	font-size: 40px;
 }
 
 header .col-md-4 p {
@@ -72,7 +71,6 @@ header .col-md-4 p {
 	position: absolute;
 	top: 100%;
 	left: 0;
-	background-color: blue;
 	width: 100%;
 }
 
@@ -154,6 +152,8 @@ header .col-md-4 p {
 		display: none;
 	}
 
+	.menu li
+
 	.menu li .sab-nav:hover {
 		display: block;
 	}
@@ -169,24 +169,17 @@ header .col-md-4 p {
 	margin-top: 10px;
 }
 
-.slider {
-	padding: 35px;
-}
-
 .slider .slider-item figure img {
 	width: 100%;
-	padding: 5px;
 }
 
 .slick-slide {
 	outline: none; 
 	background: transparent; 
-
 }
 
 .slider .slick-dots {
 	text-align: center;
-	border-width: 0px;
 	background-size: cover;
 }
 
